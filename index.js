@@ -120,8 +120,13 @@ const getItemById = (items, id) => {
   return foundItem;
 }
 
-const getPriceByName = (items) => {
-  // TODO
+const getPriceByName = (items, name) => {
+  for (let i = 0; i < items.length; i++) {
+    const currentItem = items[i];
+    if (currentItem.name === name) {
+      return currentItem.price;
+    }
+  }
 }
 
 const getAllinCategory = (items) => {
@@ -147,7 +152,7 @@ const promptAndDisplay = () => {
   console.log(namesToUppercase(inventory));
   console.log(`The item with id ${idToNum} is:`);
   console.log(getItemById(inventory, idToNum));
-  console.log(`The price of ${inputName} is: $${getPriceByName(inventory)}`);
+  console.log(`The price of ${inputName} is: $${getPriceByName(inventory, inputName)}`);
   console.log(`All items in ${inputCat} section are:`)
   console.log(getAllinCategory(inventory));
   console.log(`The total number of in stock items is: ${countTotalItems(inventory)}`);
