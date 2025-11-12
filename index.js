@@ -1,105 +1,105 @@
 const groceryItems = [
   {
     id: 1,
-    name: null,
+    name: `apple`,
     price: null,
     category: null,
     quantity: null
   },
   {
     id: 2,
-    name: null,
+    name: `banana`,
     price: null,
     category: null,
     quantity: null
   },
   {
     id: 3,
-    name: null,
+    name: `avocado`,
     price: null,
     category: null,
     quantity: null
   },
   {
     id: 4,
-    name: null,
+    name: `squash`,
     price: null,
     category: null,
     quantity: null
   },
   {
     id: 5,
-    name: null,
+    name: `zucchini`,
     price: null,
     category: null,
     quantity: null
   },
   {
     id: 6,
-    name: null,
+    name: `sweet potatoes`,
     price: null,
     category: null,
     quantity: null
   },
   {
     id: 7,
-    name: null,
+    name: `potato chips`,
     price: null,
     category: null,
     quantity: null
   },
   {
     id: 8,
-    name: null,
+    name: `granola bar`,
     price: null,
     category: null,
     quantity: null
   },
   {
     id: 9,
-    name: null,
+    name: `fruit snacks`,
     price: null,
     category: null,
     quantity: null
   },
   {
     id: 10,
-    name: null,
+    name: `cheese`,
     price: null,
     category: null,
     quantity: null
   },
   {
     id: 11,
-    name: null,
+    name: `butter`,
     price: null,
     category: null,
     quantity: null
   },
   {
     id: 12,
-    name: null,
+    name: `milk`,
     price: null,
     category: null,
     quantity: null
   },
   {
     id: 13,
-    name: null,
+    name: `chicken`,
     price: null,
     category: null,
     quantity: null
   },
   {
     id: 14,
-    name: null,
+    name: `steak`,
     price: null,
     category: null,
     quantity: null
   },
   {
     id: 15,
-    name: null,
+    name: `ham`,
     price: null,
     category: null,
     quantity: null
