@@ -1,103 +1,104 @@
 const groceryItems = [
   {
-    id: null,
+    id: 1,
     name: null,
     price: null,
     category: null,
     quantity: null
   },
   {
-    id: null,
+    id: 2,
     name: null,
     price: null,
     category: null,
     quantity: null
   },
   {
-    id: null,
+    id: 3,
     name: null,
     price: null,
     category: null,
     quantity: null
   },
   {
-    id: null,
+    id: 4,
     name: null,
     price: null,
     category: null,
     quantity: null
   },
   {
-    id: null,
+    id: 5,
     name: null,
     price: null,
     category: null,
     quantity: null
   },
   {
-    id: null,
+    id: 6,
     name: null,
     price: null,
     category: null,
     quantity: null
   },
   {
-    id: null,
-    name: null,
-    price: null,
-    category: null,
-    quantity: null
-  },
-  {id: null,
+    id: 7,
     name: null,
     price: null,
     category: null,
     quantity: null
   },
   {
-    id: null,
+    id: 8,
     name: null,
     price: null,
     category: null,
     quantity: null
   },
   {
-    id: null,
+    id: 9,
     name: null,
     price: null,
     category: null,
     quantity: null
   },
   {
-    id: null,
+    id: 10,
     name: null,
     price: null,
     category: null,
     quantity: null
   },
   {
-    id: null,
+    id: 11,
     name: null,
     price: null,
     category: null,
     quantity: null
   },
   {
-    id: null,
+    id: 12,
     name: null,
     price: null,
     category: null,
     quantity: null
   },
   {
-    id: null,
+    id: 13,
     name: null,
     price: null,
     category: null,
     quantity: null
   },
   {
-    id: null,
+    id: 14,
+    name: null,
+    price: null,
+    category: null,
+    quantity: null
+  },
+  {
+    id: 15,
     name: null,
     price: null,
     category: null,
