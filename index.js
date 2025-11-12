@@ -1,4 +1,4 @@
-const groceryItems = [
+const inventory = [
   {
     id: 1,
     name: `apple`,
@@ -127,5 +127,9 @@ const countTotalItems = (items) => {
 }
 
 const allItemsCost = (items) => {
+  // TODO
+}
+
+const promptAndDisplay = () => {
   // TODO
 }
