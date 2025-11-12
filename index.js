@@ -129,8 +129,9 @@ const getPriceByName = (items, name) => {
   }
 }
 
-const getAllinCategory = (items) => {
-  // TODO
+const getAllinCategory = (items, category) => {
+  const itemsInCat = items.filter((item) => item.category === category);
+  return itemsInCat;
 }
 
 const countTotalItems = (items) => {
@@ -154,7 +155,7 @@ const promptAndDisplay = () => {
   console.log(getItemById(inventory, idToNum));
   console.log(`The price of ${inputName} is: $${getPriceByName(inventory, inputName)}`);
   console.log(`All items in ${inputCat} section are:`)
-  console.log(getAllinCategory(inventory));
+  console.log(getAllinCategory(inventory, inputCat));
   console.log(`The total number of in stock items is: ${countTotalItems(inventory)}`);
   console.log(`The cost to buy all of the items in the store is $${allItemsCost(inventory)}`);
 }
