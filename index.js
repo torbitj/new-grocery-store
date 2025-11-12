@@ -143,7 +143,11 @@ const countTotalItems = (items) => {
 }
 
 const allItemsCost = (items) => {
-  // TODO
+  const totalCost = items.reduce((currentTotal, currentItem) => {
+    currentTotal += (currentItem.quantity * currentItem.price * 100);
+    return currentTotal;
+  }, 0);
+  return totalCost / 100;
 }
 
 const promptAndDisplay = () => {
