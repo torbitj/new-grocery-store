@@ -36,7 +36,7 @@ const groceryItems = [
   },
   {
     id: 6,
-    name: `sweet potatoes`,
+    name: `sweet potato`,
     price: 2.99,
     category: `vegetable`,
     quantity: 75
