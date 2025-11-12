@@ -107,7 +107,7 @@ const inventory = [
 ];
 
 const logGroceryNames = (items) => {
-  // TODO
+  items.forEach((item) => console.log(item.name));
 }
 
 const toUppercase = (items) => {
@@ -135,11 +135,12 @@ const allItemsCost = (items) => {
 }
 
 const promptAndDisplay = () => {
-  const inputId = prompt(`What is the item id?`);
+  const inputId = prompt(`What is the item id?`, `3`);
   const idToNum = Number(inputId);
-  const inputName = prompt(`What is the item name?`);
-  const inputCat = prompt(`What item category are you looking for?`);
-  console.log(`The grocery items in stock are: ${logGroceryNames(inventory)}`);
+  const inputName = prompt(`What is the item name?`, `banana`);
+  const inputCat = prompt(`What item category are you looking for?`, `dairy`);
+  console.log(`The grocery items in stock are: `);
+  logGroceryNames(inventory)
   console.log(toUppercase(inventory));
   console.log(`The item with id ${idToNum} is:`);
   console.log(getItemById(inventory));
