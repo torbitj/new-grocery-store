@@ -135,7 +135,11 @@ const getAllinCategory = (items, category) => {
 }
 
 const countTotalItems = (items) => {
-  // TODO
+  const totalItems = items.reduce((currentTotal, currentItem) => {
+    currentTotal += currentItem.quantity;
+    return currentTotal
+  }, 0);
+  return totalItems;
 }
 
 const allItemsCost = (items) => {
