@@ -107,29 +107,65 @@ const inventory = [
 ];
 
 const logGroceryNames = (items) => {
-  // TODO
+  items.forEach((item) => console.log(item.name));
 }
 
-const toUppercase = (items) => {
-  // TODO
+const namesToUppercase = (items) => {
+  const uppercaseNames = items.map((item) => item.name.toUpperCase());
+  return uppercaseNames;
 }
 
-const getItemById = (items) => {
-  // TODO
+const getItemById = (items, id) => {
+  foundItem = items.find((item) => item.id === id);
+  return foundItem;
 }
 
-const getPriceByName = (items) => {
-  // TODO
+const getPriceByName = (items, name) => {
+  for (let i = 0; i < items.length; i++) {
+    const currentItem = items[i];
+    if (currentItem.name === name) {
+      return currentItem.price;
+    }
+  }
+}
+
+const getAllinCategory = (items, category) => {
+  const itemsInCat = items.filter((item) => item.category === category);
+  return itemsInCat;
 }
 
 const countTotalItems = (items) => {
-  // TODO
+  const totalItems = items.reduce((currentTotal, currentItem) => {
+    currentTotal += currentItem.quantity;
+    return currentTotal
+  }, 0);
+  return totalItems;
 }
 
 const allItemsCost = (items) => {
-  // TODO
+  const totalCost = items.reduce((currentTotal, currentItem) => {
+    currentTotal += (currentItem.quantity * currentItem.price * 100);
+    return currentTotal;
+  }, 0);
+  return totalCost / 100;
 }
 
 const promptAndDisplay = () => {
-  // TODO
+  const inputId = prompt(`What is the item id?`, `3`);
+  const idToNum = Number(inputId);
+  const inputName = prompt(`What is the item name?`, `banana`);
+  const inputCat = prompt(`What item category are you looking for?`, `dairy`);
+  console.log(`The grocery items in stock are: `);
+  logGroceryNames(inventory)
+  console.log(`In stock items in all caps:`);
+  console.log(namesToUppercase(inventory));
+  console.log(`The item with id ${idToNum} is:`);
+  console.log(getItemById(inventory, idToNum));
+  console.log(`The price of ${inputName} is: $${getPriceByName(inventory, inputName)}`);
+  console.log(`All items in ${inputCat} section are:`)
+  console.log(getAllinCategory(inventory, inputCat));
+  console.log(`The total number of in stock items is: ${countTotalItems(inventory)}`);
+  console.log(`The cost to buy all of the items in the store is $${allItemsCost(inventory)}`);
 }
+
+promptAndDisplay();
