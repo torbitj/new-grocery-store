@@ -134,5 +134,12 @@ const promptAndDisplay = () => {
   const inputId = prompt(`What is the item id?`);
   const idToNum = Number(inputId);
   const inputName = prompt(`What is the item name?`);
-  const inputCat = prompt(`What item category are you looking for?`)
+  const inputCat = prompt(`What item category are you looking for?`);
+  console.log(`The grocery items in stock are: ${logGroceryNames(inventory)}`);
+  console.log(toUppercase(inventory));
+  console.log(`The item with id ${idToNum} is:`);
+  console.log(getItemById(inventory));
+  console.log(`The price of ${inputName} is: $${getPriceByName(inventory)}`);
+  console.log(`The total number of in stock items is: ${countTotalItems(inventory)}`);
+  console.log(`The cost to buy all of the items in the store is $${allItemsCost(inventory)}`);
 }
