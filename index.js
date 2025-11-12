@@ -149,3 +149,5 @@ const promptAndDisplay = () => {
   console.log(`The total number of in stock items is: ${countTotalItems(inventory)}`);
   console.log(`The cost to buy all of the items in the store is $${allItemsCost(inventory)}`);
 }
+
+promptAndDisplay();
