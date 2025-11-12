@@ -115,8 +115,9 @@ const namesToUppercase = (items) => {
   return uppercaseNames;
 }
 
-const getItemById = (items) => {
-  // TODO
+const getItemById = (items, id) => {
+  foundItem = items.find((item) => item.id === id);
+  return foundItem;
 }
 
 const getPriceByName = (items) => {
@@ -145,7 +146,7 @@ const promptAndDisplay = () => {
   console.log(`In stock items in all caps:`);
   console.log(namesToUppercase(inventory));
   console.log(`The item with id ${idToNum} is:`);
-  console.log(getItemById(inventory));
+  console.log(getItemById(inventory, idToNum));
   console.log(`The price of ${inputName} is: $${getPriceByName(inventory)}`);
   console.log(`All items in ${inputCat} section are:`)
   console.log(getAllinCategory(inventory));
