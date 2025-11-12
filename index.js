@@ -131,5 +131,8 @@ const allItemsCost = (items) => {
 }
 
 const promptAndDisplay = () => {
-  // TODO
+  const inputId = prompt(`What is the item id?`);
+  const idToNum = Number(inputId);
+  const inputName = prompt(`What is the item name?`);
+  const inputCat = prompt(`What item category are you looking for?`)
 }
