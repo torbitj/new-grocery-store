@@ -105,3 +105,27 @@ const groceryItems = [
     quantity: 85
   },
 ];
+
+const logGroceryNames = (items) => {
+  // TODO
+}
+
+const toUppercase = (items) => {
+  // TODO
+}
+
+const getItemById = (items) => {
+  // TODO
+}
+
+const getPriceByName = (items) => {
+  // TODO
+}
+
+const countTotalItems = (items) => {
+  // TODO
+}
+
+const allItemsCost = (items) => {
+  // TODO
+}
