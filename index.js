@@ -110,8 +110,9 @@ const logGroceryNames = (items) => {
   items.forEach((item) => console.log(item.name));
 }
 
-const toUppercase = (items) => {
-  // TODO
+const namesToUppercase = (items) => {
+  const uppercaseNames = items.map((item) => item.name.toUpperCase());
+  return uppercaseNames;
 }
 
 const getItemById = (items) => {
@@ -141,7 +142,8 @@ const promptAndDisplay = () => {
   const inputCat = prompt(`What item category are you looking for?`, `dairy`);
   console.log(`The grocery items in stock are: `);
   logGroceryNames(inventory)
-  console.log(toUppercase(inventory));
+  console.log(`In stock items in all caps:`);
+  console.log(namesToUppercase(inventory));
   console.log(`The item with id ${idToNum} is:`);
   console.log(getItemById(inventory));
   console.log(`The price of ${inputName} is: $${getPriceByName(inventory)}`);
